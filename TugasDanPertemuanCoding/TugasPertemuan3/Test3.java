@@ -12,6 +12,7 @@ public class Test3 {
         list.display();
     
     
+    System.out.println();
     //Bagian B//
         
     StrukturList list2 = new StrukturList();
