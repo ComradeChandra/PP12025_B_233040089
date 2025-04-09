@@ -28,34 +28,7 @@ public class StrukturList {
             HEAD = newNode;
         }
     }
-    //Prosedur untuk add middle//
     
-    public void addMid(int data, int position) {
-        Node newNode = new Node(data);
-        if (isEmpty()) {
-            HEAD = newNode;
-        } else {
-            Node curNode = HEAD;
-            if (position == 1) {
-                //Jika posisi adalah 1, panggil addHead karena posisi pertama adalah kepala//
-                newNode.setNext(curNode);
-                HEAD = newNode;
-            } else {
-                Node posNode = null;
-                int i = 1;
-                while (curNode != null && i < position) {
-                    posNode = curNode;
-                    curNode = curNode.getNext();
-                    i++;
-                }
-                //Setelah mencapai posisi yang diinginkan, tambahkan node baru di antaranya//
-                if (posNode != null) {
-                    posNode.setNext(newNode);
-                    newNode.setNext(curNode);
-                }
-            }
-        }
-    }
     
 
     //Prosedur untuk add tail//
